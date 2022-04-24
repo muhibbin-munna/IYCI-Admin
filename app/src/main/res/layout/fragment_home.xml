@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/totaluserTv"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="Total Users : "
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:typeface="serif"
+            app:layout_constraintBottom_toTopOf="@+id/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <EditText
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Title"
+                android:id="@+id/title"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/body"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.448"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Body"
+                android:id="@+id/body"
+                android:inputType="textMultiLine"
+                android:layout_height="100dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.517"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="17dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="wrap_content"
+                android:text="Send Notification"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:typeface="serif"
+                app:layout_constraintBottom_toTopOf="@+id/title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/sendButton"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:text="send notification"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/body" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/senderIdTv"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:text="Sender ID : "
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:typeface="serif"
+                app:layout_constraintBottom_toTopOf="@+id/title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="Sender ID"
+                android:id="@+id/senderId"
+                android:inputType="textMultiLine"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                app:layout_constraintBottom_toTopOf="@+id/body"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.448"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:layout_width="160dp"
+                android:text="Update" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/downloadbutton"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:text="Download Database" />
+    </LinearLayout>
+
+
+</ScrollView>
